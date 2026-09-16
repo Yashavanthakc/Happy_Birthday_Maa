@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#21001C">
+<title>For My Special Maa ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="passwordGate" class="password-gate" aria-modal="true" role="dialog">
+  <div class="password-card">
+    <div class="password-heart">❤️</div>
+    <p class="password-eyebrow">A LITTLE SECRET FOR MAA</p>
+    <h2>Before You Enter... 💌</h2>
+    <p class="password-message">This little world is only for you</p>
+
+    <form id="passwordForm" class="password-form" autocomplete="off">
+      <label for="sitePassword">Enter the password</label>
+      <div class="password-input-wrap">
+        <input
+          id="sitePassword"
+          type="password"
+          placeholder="Enter password"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-describedby="passwordError"
+          required
+        >
+        <button id="togglePassword" class="password-eye" type="button" aria-label="Show password">👁️</button>
+      </div>
+
+      <label class="remember-password">
+        <input id="rememberPassword" type="checkbox">
+        <span>Remember me on this device</span>
+      </label>
+
+      <button class="primary-btn password-submit" type="submit">Open My Surprise ❤️</button>
+      <p id="passwordError" class="password-error" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+
+<div id="loader" class="loader">
+  <div class="loader-heart">❤️</div>
+  <p>Preparing something special for Maa...</p>
+</div>
+
+<div id="hearts" class="hearts" aria-hidden="true"></div>
+<div id="sparkles" class="sparkles" aria-hidden="true"></div>
+
+<audio id="birthdayMusic" loop preload="metadata">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="top-controls">
+  <button id="themeToggle" class="control-btn" type="button" aria-label="Toggle dark and light mode">☀️</button>
+  <button id="musicButton" class="control-btn" type="button" aria-label="Play or pause music">🎵</button>
+</div>
+
+<main id="app">
+
+  <!-- SCREEN 1 -->
+  <section id="screen1" class="screen active-screen hero-screen">
+    <div class="hero-glow"></div>
+    <div class="screen-content hero-content">
+      <p class="eyebrow">A LITTLE CORNER OF MY HEART</p>
+      <h1>For You,<br><span>Maa</span>❤️</h1>
+      <p class="hero-text">Some memories are too beautiful to leave only inside our hearts.</p>
+      <button class="primary-btn next-btn" data-next="screen2">Begin Our Memory <span>💗</span></button>
+      <p class="hint">Tap when you're ready ↓</p>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 -->
+  <section id="screen2" class="screen story-screen">
+    <div class="screen-content">
+      <p class="eyebrow">OUR STORY</p>
+      <h2>Before You Knew Me...</h2>
+      <div class="line">♡</div>
+      <div class="story-card">
+        <div class="story-icon">🚌</div>
+        <p>The first time I saw you was on a bus.</p>
+        <p>At that time, we didn't even know each other. We were just two people travelling in the same world, without knowing how many memories were waiting for us.</p>
+        <p>Later, we became classmates and slowly, somehow, we started knowing each other.</p>
+        <p class="highlight">And honestly... the first thing that caught my heart was your eyes. 👀❤️</p>
+      </div>
+      <button class="primary-btn next-btn" data-next="screen3">Continue Our Story →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 -->
+  <section id="screen3" class="screen memory-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">ONE LITTLE MEMORY</p>
+      <h2>The First Time We Talked</h2>
+      <div class="line">♡</div>
+      <div class="feature-card">
+        <div class="date">2022 · NEW YEAR FUNCTION</div>
+        <div class="big-icon">🎆</div>
+        <p>Our first real conversation happened during the New Year function in 2022.</p>
+        <p>Maybe it looked like an ordinary conversation at that time...</p>
+        <strong>But for me, it became the beginning of something I would never forget. ❤️</strong>
+      </div>
+      <button class="primary-btn next-btn" data-next="screen4">One More Memory →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 4 -->
+  <section id="screen4" class="screen march-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">ONE LITTLE REQUEST</p>
+      <h2>March 27 ❤️</h2>
+      <div class="line">♡</div>
+      <div class="timeline-card">
+        <div class="number">27</div>
+        <div>
+          <h3>The First Time I Asked For Your Photo</h3>
+          <p>I asked you for your photo for the first time.</p>
+          <p>And instead of just sending a photo, you sent me <b>4 reels</b>.</p>
+          <p class="highlight">Maybe you don't remember how special that little moment became to me... but I do. 🥹❤️</p>
+          <p class="highlight">Do you want know i asked every time your photos ? look this photo wall.🌈 🦋 ❤️</p>
+        </div>
+      </div>
+      <button class="primary-btn next-btn" data-next="screen5">See my wall in my heart→</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 5: 30 PHOTOS -->
+  <section id="screen5" class="screen photos-screen">
+    <div class="screen-content wide">
+      <p class="eyebrow">OUR MEMORIES</p>
+      <h2>Memory Wall</h2>
+      <div class="line">♡</div>
+      <p class="subtitle">This wall is just a little demo of my future dream—your beautiful photo on our wall. ❤️
+One day, I want to wake up, look at you, and say, “My dream finally became my life.” 🥹🫂 ❤️</p>
+      <div id="photoGrid" class="photo-grid"></div>
+      <button class="primary-btn next-btn" data-next="screen6">Continue to Special Memories →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 6 -->
+  <section id="screen6" class="screen special-screen">
+    <div class="screen-content wide">
+      <p class="eyebrow">A beautiful wall</p>
+      <h2>Now My Dream Wall is litter sastified</h2>
+      <div class="line">♡</div>
+      <div class="special-grid">
+        <article><span>🌸</span><h3>Mallige Flowers</h3><p>Do you remember when I gave you Mallige flowers at your office?</p><small>I don't remember the exact date, but I remember the feeling.</small></article>
+        <article><span>🍫</span><h3>Flowers & Chocolates</h3><p>Giving flowers and chocolates to someone I care about became a little habit of mine.</p></article>
+        <article><span>🌷</span><h3>Searching For A Lotus</h3><p>For you, I went searching for a lotus in a lake, even knowing there was a little risk.</p><b>Because sometimes love makes us do silly, beautiful things. ❤️</b></article>
+        <article><span>🛕</span><h3>The Ganesh Temple</h3><p>I went to see Ganesh... but somehow I ended up noticing only you.</p><p>You even asked me, <em>"Why are you looking at me? Are you stalking me?"</em></p></article>
+        <article><span>💋</span><h3>That First Kiss Video</h3><p>I asked you many times for a kiss voice note or video. Sometimes I even got angry... but you still sent it.</p><b>Then you sent me photos... and that kiss video. 🥹❤️</b></article>
+        <article><span>📝</span><h3>The Notes & Stories</h3><p>July 25, 2025 — you put a note for me. I still don't know which song it was. 😄</p><p>July 28, 2025 — the first time I put a song for you on my Instagram story.</p></article>
+        <article><span>🍗</span><h3>The Biryani Memory</h3><p>One day, you cooked biryani for me. I carried that biryani box all the way home and happily shared it with my mom. ❤️</p><p>It was honestly so delicious—and somehow, the food tasted even more special because it came from you. 🥹❤️</p></article>
+        <article><span>☕❤️</span><h3>The Café Moments</h3><p>So many times we met at cafés. Every time, you ordered something to eat, while I was honestly there just to look at you, talk to you, and spend some private time with you. 🥹❤️</p><p>The food was yours, but those little moments together were always mine. 🫂💕</p></article>
+        <article><span>💭❤️</span><h3>Our Unspoken Memories</h3><p>Mysore Dasara, secret meetings, that home-delivery job, and countless little moments… some memories are too beautiful to explain. ❤️</p><p>I believe you already understand them. One day, when the time is right, I’ll tell you everything—every moment, every feeling, and every little story my heart still keeps for you. 🥹🫂❤️</p></article>
+        <article><span>🎆❤️</span><h3>The Dasara Surprise</h3><p>I asked you to come with me for Mysore Dasara, but you said you couldn’t… and then you surprised me by coming. 🥹❤️</p><p>Seeing you there with the Dasara Ambari made that day one of my happiest memories—even though our plan didn’t go as we wished. And that day, we both put our moments on Instagram stories. ❤️✨</p></article>
+        <article><span>🌙❤️</span><h3>Your Dreams</h3><p>You shared so many dreams with me—did you really think I would forget them? I remember every one. 🥹❤️</p><p>Maybe not today, but if life gives me the chance, I promise I’ll do everything I can to make your dreams come true. ❤️🫂</p></article>
+        <article><span>💭❤️</span><h3>Somany Memories  Can’t Explore and Explain</h3><p>Our secret meetings, that home-delivery job, and so many little moments only we know… ❤️ Some memories are too special to explain; maybe one day, I’ll tell you every feeling and every story my heart still keeps for you. 🥹🫂❤️</p></article>
+      </div>
+      <button class="primary-btn next-btn" data-next="screen7">Our Little Timeline →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 7 -->
+  <section id="screen7" class="screen timeline-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">OUR LITTLE TIMELINE</p>
+      <h2>Moments I Remember</h2>
+      <div class="line">♡</div>
+      <div class="timeline">
+        <div><span>🚌</span><p><b>First Sight</b><br>The first time I saw you.</p></div>
+        <div><span>🎆</span><p><b>2022 · New Year Function</b><br>The first time we talked.</p></div>
+        <div><span>🥰</span><p><b>Decemeber 03, 2024</b><br>You text me first with anether id.</p></div>
+        <div><span>😉</span><p><b>February 13, 2025</b><br>You texted me Follow back madappa on this id then we continued chat .</p></div>
+        <div><span>🎬</span><p><b>March 27</b><br>I asked for your photo, and you sent me four reels.</p></div>
+        <div><span>🫠</span><p><b>Daily</b><br>when start feeling for you and i asked every day send your atleast one photo do you know when we start looking someone again agian then love become harder anther aslo here it is for photo wall .</p></div>
+        <div><span>📝</span><p><b>July 25, 2025</b><br>You put a note for me.</p></div>
+        <div><span>🎵</span><p><b>July 28, 2025</b><br>I put a song for you on my story.</p></div>
+        <div><span>❤️</span><p><b>August 3, 2025 · 10:10 PM</b><br>The night I first proposed to you.</p></div>
+        <div><span>😉</span><p><b>Septmber 05, 2025</b><br>You first time Called me Baby .</p></div>
+        <div><span>🫶🏼</span><p><b>Septmber 28, 2025 </b><br>You put your one your on story and i said delet first then you send a screenshot told to me its only for you i hide everyone. i am too happy of you words</p></div>
+        <div><span>📸</span><p><b>October 25, 2025</b><br>The first photo I added to my story and asked you for a song.</p></div>
+        <div><span>🥺</span><p><b>November 14, 2025</b><br>The first day you got angry with me.</p></div>
+        <div><span>❣️</span><p><b>Reel no 19-24</b><br>these Reels just remaining our memories.</p></div>
+        <div><span>🥰</span><p><b>I know What you think</b><br>How this possible every date he remains ? Nange ella dates nenpilla Adre nin yavaga yav situvation en helthiya en helidiya annodu channgi gothu Thats why these collected.</p></div>
+        <div><span>😇</span><p><b>Today your Birthday</b><br>you know and i Know we are somany beautyfull moments are here, Ellanu onde sari helo astu kadime illa Gothu.</p></div>
+        <div><span>🫠</span><p><b>Daily</b><br>when start feeling for you and i asked every day send your atleast one photo do you know when we start looking someone again agian then love become harder anther aslo here it is for photo wall .</p></div>
+        <div><span>📝</span><p><b>In Photo Wall</b><br>Some without filter photos and ninu usharu illade iddaga kalsiroo photos ive. I am try to i love your character not a face or figure </figure> .</p></div>
+        <div><span>😇</span><p><b>Letter </b><br>Its take read time is 18 min normally if you understand take almost 30 min so take time and read.</p></div>
+        <div><span>🌞</span><p><b>Fact for you </b><br>You said so many i can't be your maa like before varsha, and only that girl can handle me you can't. I love only that version of varsha then how can lover anther person.</p></div>
+        <div><span>🌷</span><p><b>I want Say</b><br>I promise to her my first love and last love she is only. I know she changed. i belive she loyal to me if its true i will wait forever.</p></div>
+        <div><span>🌈</span><p><b>If you want say </b><br>If you want say anthing to me please tell in message it will my inbox, i am not force.</p></div>
+        <div><span>💞</span><p><b>My wish about you</b><br>Be with me always as Lifepatner. otherwise Don't talk me because Nangu heart ide adakku novu aguthe nin words indaa</p></div>
+        <div><span>💝</span><p><b>My Suggestion to you</b><br>Don't Overthink Love who loves and be clear You Mind Think practically</p></div>
+        <div><span>💟</span><p><b>Speptmber 15, 2026</b><br>May Be this is the Last Message to you And Sorry What problem Created me by mistake , Today Birthday I planned somany Surprise but Modoke Agilla Because you know  </p></div>
+       <div><span>💘</span><p><b></b>Sorry to last moment edits</b><br>i doing this surprice almost 2 months bu the last moment mind upset So Sorry if video not good yesterday night edit bere plan ittu mansu sari so last moment ig agide and sentance Formance</p></div>
+        <div><span>💔</span><p><b>Speptmber 15, 2026</b><br>this is my last message and never distrub you Snap send madalla inmele</p></div>
+       <div><span>🦋</span><p><b>Speptmber 15, 2026</b><br>happy Birthday Maa.❤️, I Love You</p></div>
+      </div>
+      <button class="primary-btn next-btn" data-next="screen8">Now... Your Reels 🎬 →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 8: REELS -->
+  <section id="screen8" class="screen reels-screen">
+    <div class="screen-content reels-content">
+      <p class="eyebrow">LITTLE VIDEOS OF YOU</p>
+      <h2>Your Reels <span>🎬 ❤️</span></h2>
+      <p class="subtitle">Maa... Photos can freeze a moment, but videos let me remember your smile, your expressions, and your little moments. 🥺 ❤️</p>
+      <p class="intro">So I kept a few of them here...</p>
+      <div id="reelsGrid" class="reels-grid"></div>
+      <button class="primary-btn next-btn" data-next="screen9">There's A Letter For You 💌</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 9 -->
+  <section id="screen9" class="screen letter-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">A LITTLE PIECE OF MY HEART</p>
+      <h2>Open My Heart 💌</h2>
+      <div id="envelope" class="envelope" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="flap"></div><div class="paper"></div><div class="seal">❤️</div>
+      </div>
+      <p id="envelopeText" class="envelope-text">Tap the envelope to open my heart</p>
+      <article id="loveLetter" class="love-letter hidden">
+        <!-- ==================================================
+     LOVE LETTER FOR MAA
+================================================== -->
+
+<section class="love-letter-section" id="loveLetter">
+
+    <div class="letter-wrapper">
+
+        <div class="letter-header">
+            <span class="letter-small">A LETTER FROM MY HEART</span>
+            <h2>To My Maa ❤️</h2>
+            <div class="heart-divider">♡ ───── ❤️ ───── ♡</div>
+        </div>
+
+        <div class="love-letter">
+
+            <p class="letter-greeting">
+                My Dearest Maa, ❤️
+            </p>
+
+            <p>
+                I don't know where to begin, because there are so many things
+                I have kept inside my heart for you.
+            </p>
+
+            <p>
+                Maybe this is not just a birthday letter.
+                Maybe it is a collection of all the things I felt,
+                all the memories I kept, all the prayers I made,
+                all the tears I hid, and all the love I never knew
+                how to explain to you.
+            </p>
+
+            <p class="highlight">
+                So today, I just want to tell you everything.
+            </p>
+
+            <p class="big-love">
+                I LOVE YOU, MAA. ❤️
+            </p>
+
+            <p>
+                I still remember the first time I saw you on the bus.
+                At that time, I had no idea that the girl I was looking at
+                would become such an important person in my life.
+            </p>
+
+            <p>
+                Then we became classmates.
+                Then came our first proper conversation at the
+                New Year function in <strong>2022</strong>.
+            </p>
+
+            <p>
+                It was just a moment, but sometimes the smallest moments
+                become the beginning of the biggest stories in our lives.
+            </p>
+
+            <p>
+                I remember <strong>March 27</strong>, when I asked you
+                for your photo and you sent me four reels.
+                Maybe it was a small thing for you,
+                but for me, those little things slowly became precious memories.
+            </p>
+
+            <p>
+                And I still remember the first thing I liked about you...
+            </p>
+
+            <p class="special-line">
+                Your eyes. ❤️
+            </p>
+
+            <p>
+                Slowly, without even realizing it,
+                I started collecting memories of you.
+            </p>
+
+            <p>
+                The Mallige flowers I gave you at your office. 🌸
+            </p>
+
+            <p>
+                The ring I gave you. 💍
+            </p>
+
+            <p>
+                The time I searched for a lotus in the lake. 🪷
+            </p>
+
+            <p>
+                And the first time we met at the Ganesh temple.
+            </p>
+
+            <p class="funny-line">
+                Everyone else may have gone there to see Ganesh...
+                but honestly, I was so busy looking at you that
+                I almost forgot to look at Ganesh properly. 😂❤️
+            </p>
+
+            <p>
+                Then came <strong>August 3, 2025, at 10:10 PM.</strong>
+            </p>
+
+            <p>
+                That night, I proposed to you.
+            </p>
+
+            <p>
+                I don't know whether I expressed everything perfectly,
+                but I know one thing —
+                whatever I said that night came from my heart.
+            </p>
+
+            <p>
+                I also remember <strong>October 25, 2025</strong>,
+                when your first photo became part of my story
+                and I asked for a song.
+            </p>
+
+            <p>
+                And I remember <strong>November 14, 2025</strong>,
+                the first time you got angry with me.
+            </p>
+
+            <p class="funny-line">
+                Funny thing is... even your angry face became
+                one of the faces I love.
+                My cute angry bird. 😂❤️
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                You know I have always had a special belief in
+                <strong>Lord Shiva.</strong> 🕉️
+            </p>
+
+            <p>
+                For me, Shiva represents devotion, patience,
+                waiting and a love that doesn't simply disappear.
+                That's one of the reasons Shiva has always been
+                so special to me.
+            </p>
+
+            <p>
+                But after our first fight...
+                after our first silence...
+                something changed inside me.
+            </p>
+
+            <p>
+                I started looking at faith differently.
+                I started believing in other Gods too.
+                I started going to temples.
+                Whenever I saw a God, I started praying.
+            </p>
+
+            <p>
+                I kept a <strong>Gururagavendra Swamy</strong>
+                name/book and continued my prayers.
+            </p>
+
+            <p>
+                I did a <strong>16 days Karyasiddi Anjaneya vrata for you.</strong> 🙏
+            </p>
+            
+            <p>
+                I started making <strong>11:11 wishes</strong>
+                after you told me about them.
+            </p>
+
+            <p>
+                I even wrote my wishes on leaves and kept them
+                near God's frame while praying.
+            </p>
+
+            <p class="special-line">
+                And do you know what most of those wishes were about?
+            </p>
+
+            <p class="big-love">
+                YOU. ❤️
+            </p>
+
+            <p>
+                Your happiness.
+                Your well-being.
+                Your life.
+                Your smile.
+            </p>
+
+            <p>
+                You probably don't even know how many prayers
+                I have silently made for you.
+            </p>
+
+            <p>
+                There is also something that happened during
+                one nervous situation that you don't know about.
+            </p>
+
+            <p class="special-line">
+                Whenever you have free time, ask me.
+                I'll tell you everything. ❤️
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                Maa, I have always told other people:
+            </p>
+
+            <blockquote>
+                "Don't beg for love.<br>
+                Don't beg for attention.<br>
+                Don't beg for care.<br>
+                Love the person who genuinely loves you.<br>
+                Never lose your self-respect for someone."
+            </blockquote>
+
+            <p>
+                I have motivated so many people with those words.
+            </p>
+
+            <p>
+                But the truth is...
+            </p>
+
+            <p class="special-line">
+                That motivation never worked for me when it came to you.
+            </p>
+
+            <p>
+                I told everyone not to lose themselves for love,
+                and then I found myself doing exactly that with you.
+            </p>
+
+            <p>
+                I lost my self-respect sometimes because I was
+                scared of losing you.
+            </p>
+
+            <p>
+                I'm not saying that because I think it was right.
+                I'm saying it because I want to be honest with you.
+            </p>
+
+            <p>
+                You affected me in a way nobody else ever did.
+            </p>
+
+            <p>
+                I have never been someone who cries easily because
+                of losing people.
+            </p>
+
+            <p>
+                If someone wants to leave my life,
+                I usually let them go.
+            </p>
+
+            <p>
+                But with you...
+            </p>
+
+            <p class="big-love">
+                I cried so many times. ❤️
+            </p>
+
+            <p>
+                And I'm sorry for the times I made you cry too.
+            </p>
+
+            <p>
+                I never wanted to hurt you.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                I know I'm not perfect.
+                Sometimes I tease you too much.
+                Sometimes I become too emotional.
+                Sometimes I become jealous.
+                Sometimes I become possessive.
+            </p>
+
+            <p>
+                I know that isn't always easy for you.
+            </p>
+
+            <p>
+                But Maa, I don't want to control you.
+            </p>
+
+            <p>
+                I just love you so deeply that sometimes
+                my emotions become stronger than my ability
+                to handle them.
+            </p>
+
+            <p>
+                I love hearing about your day.
+            </p>
+
+            <p>
+                The smallest story.
+                The smallest moment.
+                What happened.
+                What made you happy.
+                What made you angry.
+                What made you laugh.
+            </p>
+
+            <p>
+                I want you to feel comfortable sharing
+                your little world with me.
+            </p>
+
+            <p class="special-line">
+                Because talking to you is one of my happiest things. ❤️
+            </p>
+
+            <p>
+                And simply seeing you can make my whole day better.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                I know these days you may not love me
+                the way I love you.
+            </p>
+
+            <p>
+                Maybe you don't feel the same way.
+                Maybe you don't accept my love.
+            </p>
+
+            <p>
+                I don't know why.
+                And sometimes I don't understand it.
+            </p>
+
+            <p>
+                But I don't want to blame you for your feelings.
+                You have the right to feel whatever your heart feels.
+            </p>
+
+            <p>
+                I only want you to know mine.
+            </p>
+
+            <p class="big-love">
+                I LOVE YOU EVERY DAY. ❤️
+            </p>
+
+            <p>
+                Not only when you talk to me.
+                Not only when you are happy with me.
+                Not only when you give me attention.
+            </p>
+
+            <p>
+                Even in silence.
+                Even from a distance.
+                Even when you are angry with me.
+                Even when you ignore me.
+            </p>
+
+            <p>
+                My feelings don't simply disappear.
+            </p>
+
+            <p class="special-line">
+                You are the one person I have loved this deeply.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                I don't know what the future has planned.
+                I don't know whether we will get married or not.
+                I don't know where life will take us.
+            </p>
+
+            <p>
+                But if one day we do get married,
+                I will give my best to make you happy
+                for as long as I breathe.
+            </p>
+
+            <p>
+                Until my last breath,
+                I would want to see you smile.
+            </p>
+
+            <p>
+                And if life takes us in different directions
+                and we don't get married...
+            </p>
+
+            <p>
+                I will still wish for your happiness.
+                I will still want good things for you.
+            </p>
+
+            <p>
+                If someday someone special comes into your life,
+                I hope you will tell me yourself.
+            </p>
+
+            <p>
+                Not because I want to interfere.
+                Not because I want to stop you.
+            </p>
+
+            <p>
+                But because I would rather hear your truth
+                from you than believe someone else's words about you.
+            </p>
+
+            <p class="special-line">
+                I trust the person I know,
+                not rumours about her.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                Maa, my biggest wish has always been very simple:
+            </p>
+
+            <p class="big-love">
+                I WANT TO SEE YOU SMILE. ❤️
+            </p>
+
+            <p>
+                That's it.
+            </p>
+
+            <p>
+                Even though I secretly love seeing your
+                angry-bird face too. 😂❤️
+            </p>
+
+            <p>
+                Your smile can change my whole mood.
+                Talking to you makes me happy.
+                Seeing you makes me happy.
+            </p>
+
+            <p>
+                Even a small moment with you can stay
+                in my mind for a long time.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                And Maa, there is one more thing I want to say.
+            </p>
+
+            <p>
+                Before we completely leave each other's lives,
+                or before either of us gets married —
+                to each other or to someone else —
+                I have one heartfelt wish.
+            </p>
+
+            <p class="special-line">
+                One genuine, complete hug. 🫂
+            </p>
+
+            <p class="special-line">
+                One kiss. ❤️
+            </p>
+
+            <p class="special-line">
+                And one long, gentle conversation.
+            </p>
+
+            <p>
+                No anger.
+                No ego.
+                No misunderstandings.
+                Just you and me talking honestly.
+            </p>
+
+            <p>
+                I want to tell you everything
+                that I never knew how to say.
+            </p>
+
+            <p>
+                And I want to hear you too.
+            </p>
+
+            <p>
+                Not to change your decision.
+                Not to force anything.
+                Just because there are some conversations
+                that the heart deserves to have at least once.
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p>
+                Maa...
+            </p>
+
+            <p>
+                I don't know whether I will always have
+                a place in your life.
+            </p>
+
+            <p>
+                But I know you will always have
+                a place in mine.
+            </p>
+
+            <p>
+                You taught me things without even trying.
+            </p>
+
+            <p>
+                You made me pray more.
+                You made me believe more.
+                You made me cry.
+                You made me smile.
+                You made me jealous.
+                You made me crazy sometimes. 😂
+            </p>
+
+            <p>
+                You made me understand how deeply
+                a person can care about another person.
+            </p>
+
+            <p class="special-line">
+                And most importantly...
+            </p>
+
+            <p class="big-love">
+                You made me experience a kind of love
+                I had never experienced before. ❤️
+            </p>
+
+            <p>
+                So if you ever wonder whether I really loved you...
+            </p>
+
+            <p class="big-love">
+                YES, MAA. ❤️
+            </p>
+
+            <p>
+                I did.
+                I do.
+                And maybe I always will.
+            </p>
+
+            <p>
+                Not because I expect something from you.
+                Not because I want you to owe me anything.
+            </p>
+
+            <p>
+                But simply because...
+            </p>
+
+            <p class="big-love">
+                MY HEART LOVES YOU. ❤️
+            </p>
+
+            <p>
+                Thank you for every memory.
+                Thank you for every conversation.
+                Thank you for every smile.
+                Thank you even for the fights.
+                Thank you for the silence.
+                Thank you for becoming such an important
+                part of my story.
+            </p>
+
+            <p>
+                And if I ever hurt you...
+            </p>
+
+            <p class="special-line">
+                I'm truly sorry. ❤️
+            </p>
+
+            <p>
+                If I ever made you cry...
+            </p>
+
+            <p class="special-line">
+                I'm sorry. 🫂
+            </p>
+
+            <p>
+                If I ever became too much...
+            </p>
+
+            <p class="special-line">
+                I'm sorry.
+            </p>
+
+            <p>
+                But never doubt one thing:
+            </p>
+
+            <p class="big-love">
+                I WANTED YOUR HAPPINESS. ❤️
+            </p>
+
+            <p>
+                Maybe I didn't always know the right way to show it.
+                Maybe I made mistakes.
+                Maybe my love became too emotional sometimes.
+            </p>
+
+            <p>
+                But underneath all of it was one simple wish...
+            </p>
+
+            <p class="big-love">
+                TO SEE YOU HAPPY. ❤️
+            </p>
+
+            <div class="letter-divider">✦ ✦ ✦</div>
+
+            <p class="birthday-line">
+                Happy Birthday, Maa. 🎂❤️
+            </p>
+
+            <p>
+                I hope you get everything you dream about.
+                I hope you smile more than you cry.
+                I hope you succeed in everything you choose.
+                I hope life treats you gently.
+            </p>
+
+            <p>
+                And wherever life takes you...
+            </p>
+
+            <p class="special-line">
+                Please be happy. ❤️
+            </p>
+
+            <p>
+                Because seeing you happy will always be
+                one of my favourite things.
+            </p>
+
+            <p>
+                And if someday you look back at our story,
+                I hope you don't remember only the fights
+                or the silence.
+            </p>
+
+            <p>
+                I hope you remember the bus.
+            </p>
+
+            <p>
+                The New Year function.
+                March 27.
+                The four reels.
+                Your eyes.
+                The Mallige flowers.
+                The ring.
+                The lotus.
+                The Ganesh temple.
+                The angry-bird face.
+                October 25.
+                November 14.
+            </p>
+
+            <p class="proposal-memory">
+                And most of all...
+            </p>
+
+            <p class="proposal-date">
+                August 3, 2025 — 10:10 PM. ❤️
+            </p>
+
+            <p>
+                The night when I finally told you
+                what my heart had been carrying.
+            </p>
+
+            <p>
+                Whatever happens after this,
+                those memories will always be mine.
+            </p>
+
+            <p class="final-love">
+                And you will always be...
+            </p>
+
+            <p class="maa-signature">
+                My Maa. ❤️
+            </p>
+
+            <div class="final-hearts">
+                ❤️ 🫂 ❤️
+            </div>
+
+            <p class="last-lines">
+                I loved you yesterday.<br>
+                I love you today.<br>
+                And I will carry this love with me tomorrow too.
+            </p>
+
+            <p class="always">
+                Always. ❤️
+            </p>
+
+            <div class="signature">
+                <span>With all my heart,</span>
+                <strong>Yashavantha ❤️</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+      </article>
+      <button id="letterNext" class="primary-btn next-btn hidden" data-next="screen10">One Last Question... ❤️</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 10 -->
+  
+<!-- BIRTHDAY FIREWORKS SURPRISE -->
+<section id="birthdayFireworksScreen" class="screen birthday-fireworks-screen hidden">
+  <div class="birthday-fireworks-content">
+    <p class="eyebrow">ONE MORE LITTLE SURPRISE ❤️</p>
+    <h2>Wish Many Many Happy Birthday to You Maa! 🎂❤️</h2>
+    <p class="birthday-fireworks-subtitle">May your life always be filled with happiness, love, and beautiful dreams. ✨</p>
+    <div id="fireworksCanvasWrap" aria-hidden="true"></div>
+    <button id="fireworksContinue" class="primary-btn" type="button">One Last Surprise ❤️</button>
+  </div>
+</section>
+
+<section id="screen10" class="screen decision-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">FROM MY HEART</p>
+      <h2>Again I'm Asking You...</h2>
+      <div class="line">♡</div>
+      <p class="question"><h2>Maa... I Love You ❤️.</h2> <h3> will you Be My Mine? ❤️</h3></p>
+      <div class="decision-buttons">
+        <button id="loveYes" class="primary-btn" type="button">YES ❤️</button>
+        <button id="loveMaybe" class="secondary-btn" type="button">Let Me Think 🥺</button>
+        <button id="loveNo" class="danger-btn" type="button">NO 💔</button>
+      </div>
+      <p id="loveResponse" class="response-message"></p>
+      <button id="decisionNext" class="primary-btn hidden" data-next="screen11">Continue →</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 11 -->
+  <section id="screen11" class="screen response-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">YOU CAN TELL ME ANYTHING</p>
+      <h2>A Message For Me 💌</h2>
+      <p class="subtitle">Write anything you want me to know.</p>
+      <form id="responseForm" action="https://formspree.io/f/xoeaopno" method="POST">
+        <input type="hidden" name="_subject" value="Message from Varsha - Birthday Surprise">
+        <input type="hidden" name="response_choice" id="responseChoiceField" value="">
+        <input type="text" name="name" placeholder="Your name" required>
+        <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        <button class="primary-btn" type="submit">Send My Message ❤️</button>
+      </form>
+      <p id="formStatus" class="form-status"></p>
+      <button id="responseNext" class="primary-btn" data-next="screen12">Continue to Your Birthday Video 🎂</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 12 -->
+  <section id="screen12" class="screen video-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">JUST FOR YOU</p>
+      <h2>Happy Birthday, Maa 🎂❤️</h2>
+      <div class="video-box">
+        <video id="birthdayVideo" controls playsinline preload="metadata">
+          <source src="birthday-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <button id="videoNext" class="primary-btn next-btn" data-next="screen13">One Last Surprise 🎁</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 13 -->
+  <section id="screen13" class="screen final-screen">
+    <div class="screen-content narrow">
+      <p class="eyebrow">THE LAST LITTLE SURPRISE</p>
+      <div class="gift">🎁</div>
+      <h2>Thank You For everything, Maa ❤️</h2>
+      <p class="final-text">No matter where life takes us, these memories will always have a special place in my heart.</p>
+      <p class="final-love">Happy Birthday, Maa. ❤️🫂</p>
+      
+      <button id="restartBtn" class="secondary-btn" type="button">Watch Again ↻</button>
+    </div>
+  </section>
+
+</main>
+
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+  <button id="lightboxClose" class="close-btn" type="button" aria-label="Close">×</button>
+  <img id="lightboxImage" src="" alt="Memory">
+</div>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
