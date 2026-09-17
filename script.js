@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const passwordCard = $(".password-card", passwordGate);
 
   // The requested password is exactly: Maa
-  const CORRECT_PASSWORD = "Maa";
+  const CORRECT_PASSWORD = "iloveyou";
   const REMEMBER_KEY = "maa-surprise-unlocked";
 
   document.body.classList.add("password-locked");
